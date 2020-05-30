@@ -1,7 +1,5 @@
 # AURALIGHT
-Auralight is a ESP32-based wireless ambient lighting system. It sends screen pixel data to a conntected
-WS2812B LED strip placed behind the monitor and cast light on the wall. I wrote a screen capturing program using Pytorch tensors to
-accelerate computations, and both the server and the client web interface on the ESP32.
+Auralight is an ESP32-based wireless ambient lighting system. It sends screen pixel data to a connected WS2812B LED strip placed behind the monitor and casts light on the wall. I wrote a screen capturing program using Pytorch tensors to accelerate computations, and both the server and the client web interface on the ESP32.
 
 ## Introduction
 Auralight is a cost-effective solution to extend your entertainment to a next
