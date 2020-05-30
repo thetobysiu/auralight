@@ -28,11 +28,11 @@ during my research of computer vision.
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/IZyTaM33Dow/0.jpg)](https://www.youtube.com/watch?v=IZyTaM33Dow)
 
 ## Web interface
-![0](https://github.com/thetobysiu/auralight/img/0.png)
+![0](https://raw.githubusercontent.com/thetobysiu/auralight/master/img/0.png)
 
-![1](https://github.com/thetobysiu/auralight/img/1.png)
+![1](https://raw.githubusercontent.com/thetobysiu/auralight/master/img/1.png)
 
-![2](https://github.com/thetobysiu/auralight/img/2.png)
+![2](https://raw.githubusercontent.com/thetobysiu/auralight/master/img/2.png)
 
 ## Requirement
 ### Software
@@ -68,4 +68,4 @@ Feel free to drop a message if you have questions.
 
 ## Report
 Some details might not be covered in this readme, so you could look at the full report.
-It can be downloaded [here](https://github.com/thetobysiu/auralight/report.pdf).
+It can be downloaded [here](https://github.com/thetobysiu/auralight/raw/master/report.pdf).
