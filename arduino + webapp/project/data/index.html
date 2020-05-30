@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AURAlight</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="container-sm" style="max-width: 540px;margin-top: 20px;">
+            <h1>AURAlight</h1>
+            <div class="border rounded shadow">
+                <ul class="nav nav-tabs" id="myTab">
+                    <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1">Global</a></li>
+                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Mood</a></li>
+                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">Mode</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" role="tabpanel" id="tab-1">
+                        <p>Brightness:&nbsp;<input class="border rounded shadow-sm form-control-sm" type="number" max="255" min="0" value="%BRIGHTNESS%" name="brightness" step="1"></p>
+                        <p><button class="btn btn-primary btn-block shadow-sm" id="updateBrightness" type="button">Update Brightness</button></p>
+                        <p>Color Correction:&nbsp;<select class="shadow-sm custom-select" name="temp"></select></p>
+                        <button class="btn btn-primary btn-block shadow-sm" id="updateTemp" type="button">Update Color Profile</button>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-2">
+                        <p>Color:&nbsp;<input class="border rounded shadow-sm" type="color" name="breathColor" value="%COLOR%"></p>
+                        <p>Breath delay:&nbsp;<input class="border rounded shadow-sm form-control-sm" type="number" step="1" max="255" min="0" value="%DELAY%" name="breathDelay"></p>
+                        <p>Start Brightness:&nbsp;<input class="border rounded shadow-sm form-control-sm" type="number" step="1" max="255" min="0" value="%START%" name="startBrightness"></p>
+                        <p>End Brightness:&nbsp;<input class="border rounded shadow-sm form-control-sm" type="number" step="1" max="255" min="0" value="%END%" name="endBrightness"></p>
+                        <button class="btn btn-primary btn-block shadow-sm" id="updateMood" type="button">Update</button>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-3">
+                        <p>Current state:&nbsp;<span id="state">%STATE%</span></p>
+                        <button class="btn btn-success btn-block shadow-sm" id="updateUDP" type="button">Toggle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="aura.js"></script>
+</body>
+
+</html>
